@@ -5,7 +5,7 @@ import { Links } from 'react-router-dom'
 
 function Content() {
   return (
-    <div className='w-screen min-h-screen bg-indigo-50 relative flex flex-col'>
+    <div className='w-screen min-h-screen bg-indigo-50 flex'>
       <NavBar />
     </div>
   )

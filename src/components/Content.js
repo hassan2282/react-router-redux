@@ -1,16 +1,14 @@
-// import React from 'react'
-// import { BrowserRouter, Routes, Route } from 'react-router-dom'
-// import App from '../App'
+import React from 'react'
+import App from '../App'
+import NavBar from './NavBar'
+import { Links } from 'react-router-dom'
 
-// function Content() {
-//   return (
-//     <BrowserRouter>
-//       <Routes>
-//         <Route path='/' element={<App />}/>
-//         <Route path='/products' element={<Products />}/>
-//       </Routes>
-//     </BrowserRouter>
-//   )
-// }
+function Content() {
+  return (
+    <div className='w-screen min-h-screen bg-indigo-50 relative flex flex-col'>
+      <NavBar />
+    </div>
+  )
+}
 
-// export default Content
+export default Content

@@ -53,12 +53,15 @@ function NavBar() {
        md:max-2xl:p-2 md:max-2xl:border-2 text-center hover:scale-110 hover:duration-300 duration-300 cursor-pointer"
           size={28}
         />
-        <Icon
-          icon={comment}
-          className="text-white border-white flex justify-center items-center rounded-full
-       md:max-2xl:p-2 md:max-2xl:border-2 text-center hover:scale-110 hover:duration-300 duration-300 cursor-pointer"
-          size={28}
-        />
+
+        <Link to='/comments'>
+          <Icon
+            icon={comment}
+            className="text-white border-white flex justify-center items-center rounded-full
+        md:max-2xl:p-2 md:max-2xl:border-2 text-center hover:scale-110 hover:duration-300 duration-300 cursor-pointer"
+            size={28}
+          />
+        </Link>
 
       <Link to='/products'>
           <Icon

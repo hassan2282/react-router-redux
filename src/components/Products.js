@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import Product from './Product'
 
 function Products() {
 
@@ -11,11 +12,13 @@ const [data, setData] = useState('')
   },[])
 
   return (
-    <div className='flex flex-row justify-around w-screen h-auto'>
+    <div className='flex flex-wrap gap-2 justify-around w-screen h-auto mt-3'>
         {
             data &&
             data.map((item) => {
-              <Product item={item}/>
+              return (
+                <Product item={item} key={item.id}/>
+              )
             })
         }
     </div>

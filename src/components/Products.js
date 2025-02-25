@@ -9,10 +9,11 @@ const [data, setData] = useState('')
   useEffect(()=>{
     axios.get('https://679ba4c233d3168463249e52.mockapi.io/api/v1/products')
     .then(res => setData(res.data))
+    .catch(error => console.log(error))
   },[])
 
   return (
-    <div className='flex flex-wrap gap-2 justify-around w-screen h-auto mt-3'>
+    <div className='flex flex-wrap p-4 justify-around w-screen h-auto mt-3'>
         {
             data &&
             data.map((item) => {

@@ -15,8 +15,8 @@ import { Link } from "react-router-dom";
 function NavBar() {
   return (
     <div
-      className="flex md:max-2xl:flex-row flex-col justify-center hover:shadow-lg 
-      items-center md:max-2xl:items-center md:max-2xl:w-screen p-3 md:max-2xl:h-16 h-screen md:max-2xl:gap-4 gap-6 bg-zinc-800"
+      className="flex md:max-2xl:flex-row flex-col justify-center
+      items-center md:max-2xl:items-center md:max-2xl:w-screen p-3 md:max-2xl:h-16 h-screen md:max-2xl:gap-4 gap-6 w-[20%]"
     >
       <Zoom>
 
